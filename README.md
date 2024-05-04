@@ -1,2 +1,1 @@
-# ADDA-MessagingApp
-Individual SoftwareEngineering Project.
+A repo for single page GUI.
