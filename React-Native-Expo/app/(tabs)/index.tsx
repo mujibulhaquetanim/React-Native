@@ -1,16 +1,16 @@
-import { Image, StyleSheet, Platform } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
-import { Text, View } from 'react-native-reanimated/lib/typescript/Animated';
+import { HelloWave } from "@/components/HelloWave";
+import { StatusBar } from "expo-status-bar";
+import { Text, View } from "react-native";
+import React from "react";
 
 export default function HomeScreen() {
   return (
-    <view className='flex-1 text-lg font-bold'>
-      <Text>Hello World</Text>
+    <View className="flex-1 items-center justify-center text-lg font-bold">
       <HelloWave />
-    </view>
+      <Text className="text-red-500 font-bold">
+        Open up App.tsx to start working on your app!
+      </Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
