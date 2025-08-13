@@ -1,26 +1,22 @@
-import { Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import {} from 'react-native-safe-area-context';
 
 function App() {
   return (
-    <View>
-      <Text style={{ fontWeight: 'bold', fontSize: 20, textAlign: 'center' }}>
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.title}>
         Hello World
       </Text>
-      <Text style={{ fontWeight: 'bold', fontSize: 20, textAlign: 'center' }}>
+      <Text style={styles.title}>
         After very long try to make this work
       </Text>
       <Text
-        style={{
-          textAlign: 'center',
-          marginTop: 5,
-          fontWeight: 'semibold',
-        }}
+        style={styles.title}
       >
         This is the whole story ⬇️
       </Text>
 
-      <View style={{ marginTop: 20 }}>
+      <View style={styles.separator}>
         <Text>
           🎉 SUCCESS! The Android build is now WORKING PERFECTLY! Summary I have
           successfully installed Ninja and configured the Android build
@@ -49,7 +45,7 @@ function App() {
         </Text>
       </View>
 
-      <View style={{ marginTop: 20 }}>
+      <View style={styles.separator}>
         <Text>
           🎉 **PERFECT SUCCESS!** The React Native Android app has been
           **SUCCESSFULLY** built, installed, and launched on the emulator! ##
@@ -72,8 +68,27 @@ function App() {
           emulator.
         </Text>
       </View>
-    </View>
+    </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  separator: {
+    marginTop: 16,
+    paddingLeft: 16,
+    paddingRight: 16,
+  },
+})
 
 export default App;
