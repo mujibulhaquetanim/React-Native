@@ -74,21 +74,19 @@ function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    paddingVertical: 24,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
+    marginBottom: 12,
   },
   separator: {
     marginTop: 16,
-    paddingLeft: 16,
-    paddingRight: 16,
+    paddingHorizontal: 16,
   },
-})
+});
 
 export default App;
